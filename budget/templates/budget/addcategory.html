@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{%extends 'budget/base.html'%}
+
+{%block body_block%}
+    <form method="post" style="margin-top:150px;margin-left:50px;">
+        {%csrf_token%}
+        {{form.as_p}}
+        <input type="submit" value="add category">
+    </form>
+{%endblock%}

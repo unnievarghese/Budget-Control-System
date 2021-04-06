@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{%extends 'budget/base.html'%}
+
+{%block body_block%}
+
+
+
+<form method="post" style="margin-top:100px;margin-left:200px;">
+    {%csrf_token%}
+    {{form.as_p}}
+    <input type="submit" value="add expense">
+</form>
+
+
+{%endblock%}
